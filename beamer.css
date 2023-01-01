@@ -115,6 +115,83 @@ section.definition strong{
     font-weight:400;
 }
 
+/* GESTION DES CITATIONS */
+
+section blockquote {
+    color:black;
+    font-family: "ETBembo", "et-book", "Minion Pro", "Times New Roman";
+    border:none;
+    background-color:#00000009;
+    padding:20px;
+    border-radius:15px;
+}
+blockquote p {
+    margin:0;
+    padding:0;
+    line-height:1.25em;
+}
+section blockquote blockquote {
+    margin:0;
+    padding:0;
+    padding-top:0.75em;
+    background-color:unset!important;
+    font-size:97%;
+}
+blockquote blockquote strong {
+    font-variant:small-caps;
+    font-weight:normal;
+}
+
+/* Diapositive “Citation Longue”*/
+section.citationL {
+    grid-template-rows:20px 680px 20px ;
+    grid-template-columns:20px 920px 20px;
+    grid-template-areas:
+    ". . ."
+    ". citation ."
+    ". . .";
+    font-size:1.7rem;
+}
+section.citationL blockquote{
+    grid-area:citation;
+}
+
+/* Diapositive “Citation Moyenne” – M1 */
+section.citationM1, section.citationM2 {
+    grid-template-rows:20px 680px 20px ;
+    grid-template-areas:
+    ". . . . ."
+    ". image . citation ."
+    ". . . . .";
+    font-size:2rem;
+}
+section.citationM1 {
+    grid-template-columns:20px 1fr 25px 2fr 20px;
+}
+section.citationM2 {
+    grid-template-columns:20px 1fr 25px 3.5fr 20px;
+}
+
+section.citationM1 blockquote, section.citationM2 blockquote {
+    grid-area:citation;
+}
+section.citationM1 p, section.citationM2 p {
+    grid-area:image;
+    margin:0;
+    padding:0;
+}
+section.citationM1 img {
+    padding-bottom:40px;
+}
+section.citationM2 img {
+    padding-bottom:100px;
+}
+
+/* Diapositive “Citation Courte” */
+section.citationC blockquote {
+    margin-left:20px;
+    margin-right:20px;
+}
 
 
 
