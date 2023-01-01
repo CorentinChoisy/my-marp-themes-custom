@@ -92,6 +92,32 @@ img[alt~="center"] {
   margin: 0 auto;
 }
 
+
+/* DIAPOSITIVE “DÉFINITION” */
+
+section.definition {padding-bottom:20px;}
+section.definition h3 {text-align:center; font-size:180%;}
+section.definition p, section.definition ol, section.definition ul {
+    border:rgb(24, 33, 117) 4px solid;
+    border-radius:40px;
+    margin-left:70px;
+    margin-right:70px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-bottom:40px;
+}
+section.definition ul li:before {
+    content:"•"!important;
+    color: rgb(24, 33, 117);
+}
+section.definition strong{
+    color: rgb(14, 23, 107);
+    font-weight:400;
+}
+
+
+
+
 /* || SECTION CLASS: title */
 /* title page - only to be used as for a single slide */
 /* <!-- _class: title --> */
